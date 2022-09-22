@@ -7,4 +7,13 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="MVVM\Models\" />
+    <Folder Include="MVVM\ViewModels\" />
+    <Folder Include="Image\" />
+    <Folder Include="Fonts\" />
+    <Folder Include="Commands\" />
+    <Folder Include="Theme\" />
+  </ItemGroup>
+
 </Project>
