@@ -39,8 +39,7 @@ namespace InvoiceRegister22.Commands
 
         public void Execute(object? parameter)
         {
-            if(parameter != null)
-                _execute(parameter);
+            _execute(parameter);
         }
     }
 }
