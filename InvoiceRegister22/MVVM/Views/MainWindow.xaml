@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InvoiceRegister22"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" 
+        Height="450" Width="800"
+        WindowStyle="None"
+        Background="#FFE9E9E9"
+        WindowState="Maximized">
+    <Window.Resources>
+    </Window.Resources>
+    
     <Grid>
-
+        <Grid.Background>
+            <ImageBrush  ImageSource="/Image/Background/BackgroundOffice.jpg" Opacity="0.2" />
+        </Grid.Background>
     </Grid>
 </Window>

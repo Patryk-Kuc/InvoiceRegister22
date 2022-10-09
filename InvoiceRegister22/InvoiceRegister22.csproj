@@ -5,13 +5,27 @@
     <TargetFramework>net6.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>Image\Icons\IconsInvoiceRegiSter22.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Image\Background\BackgroundOffice.jpg" />
+    <None Remove="MVVM\Views\BackgroundOffice.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Image\Icons\IconsInvoiceRegiSter22.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="MVVM\Models\" />
-    <Folder Include="Image\" />
     <Folder Include="Fonts\" />
     <Folder Include="Theme\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Image\Background\BackgroundOffice.jpg" />
+    <Resource Include="MVVM\Views\BackgroundOffice.jpg" />
   </ItemGroup>
 
 </Project>
