@@ -10,11 +10,19 @@
 
   <ItemGroup>
     <None Remove="Image\Background\BackgroundOffice.jpg" />
-    <None Remove="MVVM\Views\BackgroundOffice.jpg" />
+    <None Remove="Image\Icons\IconMenuDarkGreen.png" />
+    <None Remove="Image\Icons\IconMenuGreen.png" />
+    <None Remove="Image\Icons\IconMenuWhite.png" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="Image\Icons\IconsInvoiceRegiSter22.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Image\Icons\IconsInvoiceRegiSter22.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
@@ -25,7 +33,11 @@
 
   <ItemGroup>
     <Resource Include="Image\Background\BackgroundOffice.jpg" />
-    <Resource Include="MVVM\Views\BackgroundOffice.jpg" />
+    <Resource Include="Image\Icons\IconMenuDarkGreen.png" />
+    <Resource Include="Image\Icons\IconMenuGreen.png" />
+    <Resource Include="Image\Icons\IconMenuWhite.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

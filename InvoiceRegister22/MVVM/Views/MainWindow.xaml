@@ -4,18 +4,26 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:InvoiceRegister22"
+        xmlns:uc="clr-namespace:InvoiceRegister22.UserControls"
         mc:Ignorable="d"
         Title="MainWindow" 
         Height="450" Width="800"
         WindowStyle="None"
-        Background="#FFE9E9E9"
+        Background="White"
         WindowState="Maximized">
+    
     <Window.Resources>
+        
     </Window.Resources>
     
     <Grid>
+
         <Grid.Background>
-            <ImageBrush  ImageSource="/Image/Background/BackgroundOffice.jpg" Opacity="0.2" />
+            <ImageBrush ImageSource="/Image/Background/BackgroundOffice.jpg" 
+                        Opacity="0.1"/>
         </Grid.Background>
+
+        <uc:DrawerMenu TextMenu="M E N U"/>
+
     </Grid>
 </Window>
