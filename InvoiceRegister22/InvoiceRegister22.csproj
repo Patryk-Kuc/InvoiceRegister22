@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <None Remove="Image\Background\BackgroundOffice.jpg" />
+    <None Remove="Image\Icons\IconListGreen.png" />
+    <None Remove="Image\Icons\IconListWhite.png" />
     <None Remove="Image\Icons\IconMenuDarkGreen.png" />
     <None Remove="Image\Icons\IconMenuGreen.png" />
     <None Remove="Image\Icons\IconMenuWhite.png" />
@@ -20,6 +22,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Image\Icons\IconListGreen.png" />
+    <Resource Include="Image\Icons\IconListWhite.png" />
     <Resource Include="Image\Icons\IconsInvoiceRegiSter22.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

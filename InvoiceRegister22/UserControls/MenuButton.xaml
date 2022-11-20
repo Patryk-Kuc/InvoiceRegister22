@@ -10,32 +10,70 @@
              Name="ButtonForMenu">
 
     <UserControl.Resources>
+
+
+        <ImageBrush x:Key="ImageList" ImageSource="D:\Programing\C#\MyProjects\InvoiceRegister22\InvoiceRegister22\InvoiceRegister22\Image\Icons\IconListWhite.png"/>
+        <ImageBrush x:Key="IconListGren" ImageSource="D:\Programing\C#\MyProjects\InvoiceRegister22\InvoiceRegister22\InvoiceRegister22\Image\Icons\IconListGreen.png"/>
+        <ImageBrush x:Key="IconListGren1" ImageSource="D:\Programing\C#\MyProjects\InvoiceRegister22\InvoiceRegister22\InvoiceRegister22\Image\Icons\IconMenuWhite.png"/>
         
         <Style x:Key="ButtonStyle"
-               TargetType="{x:Type Button}">
+               TargetType="{x:Type ToggleButton}">
 
             <Setter Property="Template">
                 <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type Button}">
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
 
-                        <Button Height="70" 
+                        <ToggleButton Height="70" 
                                 Width="250"
-                                Background="Transparent">
+                                Background="Transparent"
+                                BorderThickness="0"
+                                Padding="0">
                             
                             <Grid Height="50"
                                   HorizontalAlignment="Left"
-                                  VerticalAlignment="Center">
+                                  VerticalAlignment="Center"
+                                  Margin="0,0,0,0">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="50"/>
                                     <ColumnDefinition Width="200"/>
                                 </Grid.ColumnDefinitions>
 
-                                <Image Source="D:\Programing\C#\MyProjects\InvoiceRegister22\InvoiceRegister22\InvoiceRegister22\Image\Icons\IconMenuWhite.png">
-                                    
-                                </Image>
-                                
+                                <Border x:Name="BorderButton"
+                                        Grid.Column="0"
+                                        Background="{StaticResource ImageList}"
+                                        BorderThickness="0"
+                                        SnapsToDevicePixels="True"/>
+
+                                <TextBlock x:Name="ButtonText" 
+                                           Grid.Column="1"
+                                           Text="List of invoice"
+                                           TextAlignment="Center"
+                                           VerticalAlignment="Center"
+                                           FontSize="22" />
                             </Grid>
-                        </Button>
+                        </ToggleButton>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger  Property="IsMouseOver" Value="True">
+                                <Setter Property="Background"
+                                        TargetName="BorderButton"
+                                        Value="{StaticResource IconListGren}"/>
+                                <Setter Property="BorderBrush"
+                                        TargetName="BorderButton"
+                                        Value="{StaticResource IconListGren}"/>
+                            </Trigger>
+
+                            <Trigger Property="IsChecked"  Value="True">
+
+                                <Setter Property="Background"
+                                        TargetName="BorderButton"
+                                        Value="{StaticResource IconListGren}"/>
+                                <Setter Property="BorderBrush"
+                                        TargetName="BorderButton"
+                                        Value="{StaticResource IconListGren}"/>
+
+                            </Trigger>
+                        </ControlTemplate.Triggers>
                         
                     </ControlTemplate>
                 </Setter.Value>
@@ -47,11 +85,11 @@
     
     <Grid Height="80">
         
-        <Button x:Name="BtMenu"
+        <ToggleButton x:Name="BtMenu"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Center"
                 Height="70"
-                Width="250"
+                Width="250"                
                 Style="{StaticResource ButtonStyle}"/>
     </Grid>
     
